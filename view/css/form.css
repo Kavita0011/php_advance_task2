@@ -1,0 +1,87 @@
+/* stylesheet for create.php and update.php */
+h1 {
+  font-size: 40px;
+  color: rgb(73, 73, 141);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(73, 73, 141);
+}
+
+/* -- css for container -- */
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* -- css for inner-container -- */
+
+.inner-container {
+  width: 100%;
+  border-radius: 10px;
+  background-color: lavender;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* css for all divs */
+div {
+  padding: 10px;
+}
+
+/* -- css for input tags -- */
+input {
+
+  height: 34px;
+}
+
+/* -- css for input-boxes -- */
+.input-boxes {
+  color: rgb(73, 73, 141);
+  letter-spacing: 3px;
+  justify-self: center;
+  width: 80%;
+  line-height: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: flex-start;
+}
+
+/* css for message  */
+#message {
+  color: rgb(73, 73, 141);
+
+}
+
+/* css for button  */
+button {
+  padding: 14px;
+  font-size: 20px;
+  color: whitesmoke;
+  background-color: rgb(73, 73, 141);
+  border-radius: 10px;
+}
+
+/* css for .btn-link-outer-wrap */
+.btn-link-outer-wrap {
+  display: flex;
+}
+
+/* css for link class */
+.link {
+  font-size: 22px;
+  width: 100%;
+  max-width: 150px;
+
+}
+
+/* css for anchor tags */
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color:  rgb(73, 73, 141);
+}

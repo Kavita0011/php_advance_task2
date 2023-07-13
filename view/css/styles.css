@@ -1,0 +1,50 @@
+/* css for read file*/
+/* start of css for all tables */
+
+body {
+  background-color: rgb(251, 251, 252);
+}
+
+table {
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+h1 {
+  padding: 30px;
+  color: rgb(72, 72, 151);
+}
+
+/*    css for table heading */
+th {
+  background-color: rgb(72, 72, 151);
+  color: whitesmoke;
+  padding: 6px;
+  font-size: 18px;
+}
+
+/*      css for table data    */
+td {
+  background-color: lavender;
+  padding: 6px;
+  font-size: 16px;
+}
+
+/* end of css for all tables */
+
+
+/* css for button */
+.btns {
+  padding: 14px;
+  background-color: rgb(73, 73, 141);
+  border-radius: 10px;
+}
+
+/* css for link */
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
