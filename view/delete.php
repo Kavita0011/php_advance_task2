@@ -32,7 +32,7 @@ $delete = $create_obj->delete_row($table_name = 'user');
     <title>Delete page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>

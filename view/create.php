@@ -41,7 +41,7 @@ if (isset($_REQUEST['submit'])) {
     <title>create page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 </head>
 
 <body>
@@ -71,8 +71,7 @@ if (isset($_REQUEST['submit'])) {
                     <!-- start of input-boxes -->
                     <div class="input-boxes">
                         <label for="Password" required>Password</label>
-                        <input type="password" name="user_password" id="Password" ><br><br><br>
-                        <span> <input type="checkbox" onclick="show_password()">Show Password</span>
+                        <input type="password" name="user_password" id="Password"><br><br><br>
                     </div>
                     <!-- end of input-boxes -->
                     <!-- start of input-boxes for button and link -->
@@ -103,7 +102,7 @@ if (isset($_REQUEST['submit'])) {
     $create_obj->con_close();
     ?>
     <!-- javascript file included here -->
-    <script src="js/index.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

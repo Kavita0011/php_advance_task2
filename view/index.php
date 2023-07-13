@@ -23,7 +23,7 @@ $result = $create_obj->read_table(
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ee598ec6dd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
     <title>read file</title>
 </head>
 
@@ -79,7 +79,7 @@ $result = $create_obj->read_table(
 $create_obj->con_close();
 ?>
 <!-- javascript file included -->
-<script src="js/index.js"></script>
+<script src="assets/js/index.js"></script>
 
 
 </html>

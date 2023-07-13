@@ -49,7 +49,7 @@ if (isset($_REQUEST['submit'])) {
     <title>update page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 </head>
 
 <body>
@@ -133,7 +133,7 @@ if (isset($_REQUEST['submit'])) {
     $create_obj->con_close();
     ?>
     <!-- javascript link for update page -->
-    <script src="js/index.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
