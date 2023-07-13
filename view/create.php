@@ -1,20 +1,20 @@
 <?php
-//  ini_set('display_errors', 1);
-//  ini_set('display_startup_errors', 1);
-//  error_reporting(E_ALL);
+ ini_set('display_errors', 1);
+ ini_set('display_startup_errors', 1);
+ error_reporting(E_ALL);
 //  including userController.php and user.php files
 include_once "../controller/userController.php";
 include_once "../model/classes/user.php";
 // creating aliases for userController and User
 use App\Controller\UserController;
 use App\User\User;
+// creating objects
 
+$user_control = new UserController();
+$create_obj = new User();
 //    if submit is pressed then it will execute query
 if (isset($_REQUEST['submit'])) {
-    // creating objects
-
-    $user_control = new UserController();
-    $create_obj = new User();
+    
     // calling add_action() in userController class 
     $add_user = $user_control->add_action();
     $create_obj->setter($add_user[0], $add_user[1], $add_user[2]);

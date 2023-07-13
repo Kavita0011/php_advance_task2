@@ -121,6 +121,7 @@ class User extends Db
         $sql_query = "DELETE FROM $table_name where  " . array_keys($id_value)[0] . "  = " . array_values($id_value)[0] . " ";
         // echo $sql_query;
         $delete_query = mysqli_query($this->conn, $sql_query);
+        
         return $delete_query;
     }
 }
