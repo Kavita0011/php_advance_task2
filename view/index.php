@@ -1,11 +1,11 @@
 <?php
 
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 //  including userController.php and user.php files
 include_once "../controller/userController.php";
-include_once "../model/classes/user.php";
+include_once "../model/classes/User.php";
 // creating aliases for userController and User
 use App\User\User as user;
 $create_obj = new user();
@@ -80,6 +80,4 @@ $create_obj->con_close();
 ?>
 <!-- javascript file included -->
 <script src="assets/js/index.js"></script>
-
-
 </html>

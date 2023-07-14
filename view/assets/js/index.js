@@ -1,3 +1,5 @@
+// js file for mvc task
+// function to show or hide password by changing its type while we check or uncheck the checkbox in update operation
 function show_password() {
   var x = document.getElementById("Password");
   if (x.type === "password") {
@@ -6,6 +8,7 @@ function show_password() {
     x.type = "password";
   }
 }
+// ask_user() to appear a confirm box to ask before before deleting udser data from DB 
 function ask_user(passedArray) {
 
   console.log(typeof passedArray);

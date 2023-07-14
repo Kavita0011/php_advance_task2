@@ -4,7 +4,7 @@
  error_reporting(E_ALL);
 //  including userController.php and user.php files
 include_once "../controller/userController.php";
-include_once "../model/classes/user.php";
+include_once "../model/classes/User.php";
 // creating aliases for userController and User
 use App\Controller\UserController;
 use App\User\User;

@@ -3,11 +3,11 @@
 namespace App\User;
 
 // including file configure.php 
-if (file_exists('../config/configure.php')) {
-    include_once '../config/configure.php';
+if (file_exists('../Config/Configure.php')) {
+    include_once '../Config/Configure.php';
 }
 // creating alias for App\Config\DataBase
-use App\Config\DataBase as Db;
+use App\Config\Configure\Configure as Db;
 
 // creating class User
 class User extends Db

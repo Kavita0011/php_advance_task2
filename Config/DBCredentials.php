@@ -1,7 +1,7 @@
 <?php
 // namespace created
 // creating Namespace App\Credentials DBCredentials class
-namespace App\Credentials;
+namespace App\Config\DBCredentials;
 
 // DBCredentials class created
 // DBCredentials class contains all database Credentails
