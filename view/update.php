@@ -23,11 +23,12 @@ if (isset($_REQUEST['submit'])) {
     //   calling function update_row to update the data
     $user_edit_method = $create_obj->update_row('user');
     //   if successfully executed it will store message of successful insertion in array
+
     if (isset($user_edit_method)) {
         $message = "Dear  candidate , your data has been updated";
     }
 
-} else {
+}else {
     $result = $create_obj->read_table(
         $table_name = 'user', $columns = '*', $joins = '',
         $condition = ' user_id= ' . $user_id, $order_by_cloumn_name = '', $order_by = '', $limit = ''

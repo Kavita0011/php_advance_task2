@@ -39,6 +39,7 @@ $delete = $create_obj->delete_row($table_name = 'user');
     <!-- delete query html page -->
     <h1>DELETE QUERY PAGE</h1>
     <?php
+    try{
     // if query executed print message for user
     if (isset($delete)) {
         echo "Dear candidate, your id is $user_data , is successfully deleted ";
@@ -48,10 +49,13 @@ $delete = $create_obj->delete_row($table_name = 'user');
         ?>
         <!-- scrpit code for redirecting user to index.php -->
         <script>setTimeout(function () { window.location.href = "index.php"; }, 3000); </script>
-    <?php } else {
-        echo "error occured in deleting row";
+    <?php } 
+    else {
+   throw new Exception("error occured in deleting row");
     }
-    // closing connection
+}catch(Exception $error){
+echo "Error message : ".$error->getMessage();
+}    // closing connection
     $create_obj->con_close();
     ?>
 </body>

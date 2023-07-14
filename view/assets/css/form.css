@@ -13,6 +13,7 @@ body {
 
 /* -- css for container -- */
 .container {
+  margin-top:20px;
   max-width: 1070px;
   margin: 0 auto;
   padding: 0 20px;
@@ -21,6 +22,7 @@ body {
 /* -- css for inner-container -- */
 
 .inner-container {
+ 
   width: 100%;
   border-radius: 10px;
   background-color: lavender;

@@ -21,12 +21,15 @@ if (isset($_REQUEST['submit'])) {
     // calling insert_row() in User class
     $user_added = $create_obj->insert_row('user');
     // if successfully executed it will store message of successful insertion in array
+  try{
     if (isset($user_added)) {
-        $message = "congrats you are added to our mvc family";
+        $message = "Congrats you are added to our mvc family";
     } else {
-        $message = "not working";
+        throw new Exception("not working");
     }
-}
+}catch( Exception $error){
+    $message=" Error Message : ".$error->getMessage();
+}}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -34,7 +37,6 @@ if (isset($_REQUEST['submit'])) {
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -104,5 +106,4 @@ if (isset($_REQUEST['submit'])) {
     <!-- javascript file included here -->
     <script src="assets/js/index.js"></script>
 </body>
-
 </html>
