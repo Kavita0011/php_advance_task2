@@ -94,13 +94,7 @@ if (isset($_REQUEST['submit'])) {
                     <div class="input-boxes">
                         <label for="Password">Password</label>
                         <!-- <input type="password" name="user_password" id="mypassword"><br> -->
-                        <input type="password" name="password" id="Password" value="<?php
-                        // echo $user_data[3];
-                        if (!isset($_REQUEST['password'])) {
-                            echo $user_data[3];
-                        } else {
-                            echo $_REQUEST['password'];
-                        } ?>"><br><br><br>
+                        <input type="password" name="password" id="Password"><br><br><br>
                         <span>
                             <input type="checkbox" onclick="show_password()">Show Password</span>
                     </div>

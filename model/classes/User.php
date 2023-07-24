@@ -19,7 +19,7 @@ class User extends Db
     {
         $this->name = $name;
         $this->email = $email;
-        $this->user_password = $password;
+        $this->user_password = password_hash($password,PASSWORD_DEFAULT) ;
     }
     // getter method use data in function for sqlqueries taking from controller
     function getter()
